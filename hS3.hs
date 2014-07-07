@@ -17,7 +17,7 @@ import Data.Maybe
 import Network.AWS.S3Object
 import qualified Data.ByteString.Lazy.Char8 as L
 
-withConn :: ( AWSConnection -> IO (AWSResult a)) -> IO a
+withConn :: (AWSConnection -> IO (AWSResult a)) -> IO a
 withConn f = do
   mConn <- amazonS3ConnectionFromEnv
   case mConn of

@@ -45,5 +45,7 @@ Library
         Network.AWS.Authentication,
         Network.AWS.ArrowUtils
 
+  extensions: OverloadedStrings
+
 Executable     hs3
   main-is:        hS3.hs
